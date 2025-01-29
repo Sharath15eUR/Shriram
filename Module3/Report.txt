@@ -1,0 +1,14 @@
+shriram@shriram-VirtualBox:~/Documents$ ./backup_manager.sh /home/shriram/Documents/source /home/shriram/Documents/backup  .txt
+Files to be backed up:
+file10.txt - 0 bytes - Last Modified: 2025-01-29 07:07:08
+file11.txt - 0 bytes - Last Modified: 2025-01-29 07:07:08
+file12.txt - 0 bytes - Last Modified: 2025-01-29 07:07:08
+file1.txt - 0 bytes - Last Modified: 2025-01-29 07:06:30
+file3.txt - 0 bytes - Last Modified: 2025-01-29 07:06:30
+file5.txt - 0 bytes - Last Modified: 2025-01-29 07:06:30
+file6.txt - 0 bytes - Last Modified: 2025-01-29 07:06:30
+file8.txt - 0 bytes - Last Modified: 2025-01-29 07:06:30
+Backup summary:
+Total files processed: 8
+Total size of files backed up: 0 bytes
+Backup directory: /home/shriram/Documents/backup
