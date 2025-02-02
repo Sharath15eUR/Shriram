@@ -1,0 +1,29 @@
+shriram@shriram-VirtualBox:~/Documents$ ./file_analyzer.sh /home/shriram/Documents/Module5 This
+Error: Keyword cannot be empty!
+shriram@shriram-VirtualBox:~/Documents$ ./file_analyzer.sh -d /home/shriram/Documents/Module5 -k "This"
+Searching recursively for 'This' in directory: /home/shriram/Documents/Module5
+/home/shriram/Documents/Module5/file1:1:This is shiram J
+/home/shriram/Documents/Module5/file2:1:This is world largest tower
+/home/shriram/Documents/Module5/file3:1:This can be found in recursion
+shriram@shriram-VirtualBox:~/Documents$ ./file_analyzer.sh -d /home/shriram/Documents/Module5/file1 -k"This"
+Error: Directory '/home/shriram/Documents/Module5/file1' not found!
+shriram@shriram-VirtualBox:~/Documents$ ./file_analyzer.sh -d /home/shriram/Documents/Module5/file1 -k "This"
+Error: Directory '/home/shriram/Documents/Module5/file1' not found!
+shriram@shriram-VirtualBox:~/Documents$ ./file_analyzer.sh -f /home/shriram/Documents/Module5/file1 -k"This"
+Searching for 'This' in file: /home/shriram/Documents/Module5/file1
+This is shiram J
+shriram@shriram-VirtualBox:~/Documents$ ./file_analyzer.sh --help
+Usage: ./file_analyzer.sh [options]
+Options:
+  -d <directory>   Search for a keyword recursively in a directory
+  -f <file>        Search for a keyword in a specific file
+  -k <keyword>     Keyword to search
+  --help           Display this help menu
+
+shriram@shriram-VirtualBox:~/Documents$ cat error.log
+cat: error.log: No such file or directory
+shriram@shriram-VirtualBox:~/Documents$ cat errors.log
+Error: Keyword cannot be empty!
+Error: Keyword cannot be empty!
+Error: Directory '/home/shriram/Documents/Module5/file1' not found!
+Error: Directory '/home/shriram/Documents/Module5/file1' not found!
