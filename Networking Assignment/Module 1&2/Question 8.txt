@@ -1,0 +1,25 @@
+shriram@shriram-VirtualBox:~$ iwconfig
+lo        no wireless extensions.
+
+enp0s3    no wireless extensions.
+
+shriram@shriram-VirtualBox:~$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fd00::f755:d6bf:bf07:d19a  prefixlen 64  scopeid 0x0<global>
+        inet6 fd00::a00:27ff:fe37:65b6  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::a00:27ff:fe37:65b6  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:37:65:b6  txqueuelen 1000  (Ethernet)
+        RX packets 122  bytes 15741 (15.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 188  bytes 27707 (27.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 40  bytes 4525 (4.5 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 40  bytes 4525 (4.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0

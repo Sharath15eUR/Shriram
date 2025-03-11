@@ -1,0 +1,92 @@
+Configuring a basic LAN interface in Linux can be efficiently achieved using the ip command from the iproute2 suite. This modern utility offers comprehensive control over network interfaces and is recommended over the older ifconfig tool. Here's a step-by-step guide:
+
+---
+
+1. Identify the Network Interface
+
+First, determine the name of the network interface you wish to configure. Common names include eth0, enp3s0, etc. To list all available network interfaces, execute:
+
+bash
+ip link show
+
+
+
+This command displays all network interfaces along with their statuses. cite🚢turn0search0🚶
+
+---
+
+2. Assign an IP Address
+
+To assign an IP address to the desired interface, use the following syntax:
+
+bash
+sudo ip addr add [IP_ADDRESS]/[PREFIX_LENGTH] dev [INTERFACE_NAME]
+
+
+
+Replace [IP_ADDRESS] with your desired IP (e.g., 192.168.1.10), [PREFIX_LENGTH] with the subnet prefix (e.g., 24 for a 255.255.255.0 subnet mask), and [INTERFACE_NAME] with your interface's name (e.g., eth0).
+
+Example:
+
+bash
+sudo ip addr add 192.168.1.10/24 dev eth0
+
+
+
+This command assigns the IP address 192.168.1.10 with a subnet mask of 255.255.255.0 to the eth0 interface. cite🚢turn0search3🚶
+
+---
+
+3. Bring the Interface Up
+
+After assigning the IP address, activate the interface with:
+
+bash
+sudo ip link set dev [INTERFACE_NAME] up
+
+
+Example:
+
+bash
+sudo ip link set dev eth0 up
+
+
+
+This command transitions the eth0 interface to the 'up' state, making it operational. cite🚢turn0search0🚶
+
+---
+
+4. Verify the Configuration
+
+To confirm that the IP address has been correctly assigned and the interface is active, run:
+
+bash
+ip addr show dev [INTERFACE_NAME]
+
+
+Example:
+
+bash
+ip addr show dev eth0
+
+
+
+This will display detailed information about the eth0 interface, including its assigned IP address and status. cite🚢turn0search3🚶
+
+---
+
+5. Persisting the Configuration
+
+The above configurations are temporary and will reset after a system reboot. To make them permanent, add the configuration details to your system's network configuration files. The exact method varies depending on your Linux distribution:
+
+- *Debian/Ubuntu:* Edit /etc/network/interfaces or create a file in /etc/network/interfaces.d/.
+
+- *Red Hat/CentOS:* Create or modify the appropriate file in /etc/sysconfig/network-scripts/.
+
+- *Systemd-based systems:* Use systemd-networkd service with configurations in /etc/systemd/network/.
+
+---
+
+Note: While older tools like ifconfig can perform similar tasks, they are considered deprecated in favor of the ip command from the iproute2 suite, which offers more advanced and flexible networking capabilities.
+
+---

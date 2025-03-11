@@ -1,0 +1,16 @@
+To check default gateway is reachable??
+
+ping 192.168.1.3
+PING 192.168.1.3 (192.168.1.3) 56(84) bytes of data.
+64 bytes from 192.168.1.3: icmp_seq=1 ttl=255 time=0.886 ms
+64 bytes from 192.168.1.3: icmp_seq=2 ttl=255 time=0.710 ms
+64 bytes from 192.168.1.3: icmp_seq=3 ttl=255 time=1.19 ms
+64 bytes from 192.168.1.3: icmp_seq=4 ttl=255 time=0.930 ms
+64 bytes from 192.168.1.3: icmp_seq=5 ttl=255 time=0.925 ms
+64 bytes from 192.168.1.3: icmp_seq=6 ttl=255 time=1.21 ms
+64 bytes from 192.168.1.3: icmp_seq=7 ttl=255 time=0.827 ms
+^Z
+[1]+  Stopped                 ping 192.168.1.3
+
+What is default gateway?
+A default gateway is the router that connects your local network to other networks (e.g., the internet). It acts as an exit point for traffic that isn't on your local network

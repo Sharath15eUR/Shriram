@@ -1,0 +1,9 @@
+5.What Happens When a Duplicate IP is Configured in a Network?
+An IP conflict occurs when:
+
+Two devices manually assigned the same static IP.
+Example: PC1 (192.168.1.100) and PC2 (192.168.1.100).
+A static IP matches a dynamically assigned (DHCP) IP.
+Example: A server is manually set to 192.168.1.50, but the DHCP server also assigns 192.168.1.50 to a laptop.
+Network misconfiguration or DHCP errors.
+Example: Two DHCP servers assigning overlapping IP ranges

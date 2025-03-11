@@ -1,0 +1,19 @@
+PS C:\Users\Shriram J> ssh -p 2222 shriram@127.0.0.1
+shriram@127.0.0.1's password:
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-51-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+275 updates can be applied immediately.
+44 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+8 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+Last login: Thu Mar  6 20:49:32 2025 from 10.0.2.2
+shriram@shriram-VirtualBox:~$

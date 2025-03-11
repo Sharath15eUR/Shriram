@@ -1,0 +1,26 @@
+A DHCP (Dynamic Host Configuration Protocol) server automatically assigns IP addresses to devices in a network. This prevents IP conflicts and simplifies network management.
+
+1️⃣ Steps of DHCP IP Assignment
+1️⃣ Device Sends a DHCP Discover (Broadcast)
+
+When a device joins a network, it sends a DHCP Discover message to find a DHCP server.
+This message is broadcast to all devices (255.255.255.255).
+2️⃣ DHCP Server Responds with an Offer
+
+The DHCP server sends a DHCP Offer, suggesting an available IP address, subnet mask, gateway, and DNS server.
+3️⃣ Device Requests the IP
+
+The device responds with a DHCP Request, asking to use the offered IP.
+4️⃣ DHCP Server Confirms the Lease
+
+The server sends a DHCP Acknowledgment (ACK) confirming the assigned IP.
+The device can now use the IP address for a specified lease time.
+2️⃣ Example of DHCP Process
+Step	Message Sent	Purpose
+1️⃣	DHCP Discover	Device requests an IP
+2️⃣	DHCP Offer	Server offers an available IP
+3️⃣	DHCP Request	Device confirms selection
+4️⃣	DHCP ACK	Server assigns the IP
+3️⃣ What Happens When Lease Time Expires?
+The device renews its IP before expiration.
+If the device disconnects, the server reclaims the IP and assigns it to another device.

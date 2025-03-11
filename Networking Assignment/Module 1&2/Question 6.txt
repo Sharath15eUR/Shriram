@@ -1,0 +1,23 @@
+1️⃣ Install AnyDesk
+🔹 Windows → Download & install from https://anydesk.com
+🔹 Linux → Run:
+
+bash
+Copy
+Edit
+sudo apt install anydesk -y  # Debian/Ubuntu  
+sudo yum install anydesk -y  # RHEL/CentOS  
+2️⃣ Get AnyDesk Address
+🔹 Open AnyDesk on the remote system → Note the 9-digit ID.
+
+3️⃣ Connect to the Remote System
+🔹 Open AnyDesk on your system → Enter the 9-digit ID → Click Connect.
+
+4️⃣ Accept Connection on Remote System
+🔹 Remote user must click "Accept" when prompted.
+
+5️⃣ Enable Unattended Access (Optional)
+🔹 On remote system → Settings → Security → Enable Unattended Access → Set a password.
+
+6️⃣ Transfer Files
+🔹 While connected, press Ctrl + Alt + Shift → Open File Manager → Drag & drop files.
